@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.welcome-div {
+  @apply text-gray-300 font-semibold text-base ml-auto;
+}
+
+.movements {
+  @apply bg-slate-950 opacity-80 row-span-3 rounded-md overflow-y-scroll;
+}
+
+.movements::-webkit-scrollbar {
+  width: 8px;
+  background: #000;
+}
+.movements::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+.movements__row {
+  @apply grid grid-cols-[1fr_1fr_1fr] py-[20px] px-[40px] border-b-1 border-b-black  text-right;
+}
+
+.movements__type--deposit {
+  @apply mr-[2rem] bg-linear-85 from-green-500 to-green-600 text-white text-center rounded-md text-sm py-[0.1rem] px-[1rem];
+}
+
+.movements__type--withdrawal {
+  @apply mr-[2rem] bg-linear-85 from-red-400 to-red-500 text-white text-center rounded-md text-sm py-[0.1rem] px-[1rem];
+}
+
+.movements__date {
+  @apply text-sm text-gray-200;
+}
